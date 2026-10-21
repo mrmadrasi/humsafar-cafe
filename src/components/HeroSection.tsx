@@ -89,7 +89,7 @@ export function HeroSection({ onOpenBooking }: HeroSectionProps) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1 }}
-          className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
+          className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5"
         >
           {/* Primary CTA */}
           <button
@@ -101,13 +101,22 @@ export function HeroSection({ onOpenBooking }: HeroSectionProps) {
             <div className="absolute inset-0 -z-10 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
           </button>
 
-          {/* Secondary CTA */}
+          {/* 3D Cafe Experience CTA */}
           <a
-            href="#playlist"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-full border border-[var(--border-color)] bg-[var(--bg-card)] px-8 py-4 text-sm sm:text-base font-semibold text-[var(--text-primary)] backdrop-blur-md transition-all duration-300 hover:border-[var(--accent-gold)] hover:bg-[var(--bg-tertiary)] hover:scale-105 shadow-xl"
+            href="#experience"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-full border border-[var(--border-color)] bg-[var(--bg-card)] px-7 py-4 text-sm sm:text-base font-semibold text-[var(--text-primary)] backdrop-blur-md transition-all duration-300 hover:border-[var(--accent-gold)] hover:bg-[var(--bg-tertiary)] hover:scale-105 shadow-xl"
           >
-            <Headphones className="h-5 w-5 text-[var(--accent-gold)]" />
-            <span>Listen to Our Playlist</span>
+            <Coffee className="h-5 w-5 text-[var(--accent-gold)]" />
+            <span>Enter 3D Café View</span>
+          </a>
+
+          {/* Spotify Playlist CTA */}
+          <a
+            href="#experience"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-full border border-emerald-500/40 bg-emerald-950/30 px-6 py-4 text-sm sm:text-base font-semibold text-emerald-300 backdrop-blur-md transition-all duration-300 hover:border-[#1DB954] hover:bg-emerald-900/40 hover:scale-105 shadow-xl"
+          >
+            <Headphones className="h-5 w-5 text-[#1DB954]" />
+            <span>Romantic Spotify Songs</span>
           </a>
         </motion.div>
 
@@ -138,7 +147,7 @@ export function HeroSection({ onOpenBooking }: HeroSectionProps) {
 
       {/* Smooth Scroll Indicator */}
       <motion.a
-        href="#playlist"
+        href="#experience"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity, delay: 1.5 }}

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
-import { PlaylistSection } from "@/components/PlaylistSection";
+import { RomanticCenterpiece } from "@/components/RomanticCenterpiece";
 import { DateExperienceSection } from "@/components/DateExperienceSection";
 import { SpecialExperiencesSection } from "@/components/SpecialExperiencesSection";
 import { SignatureMenuSection } from "@/components/SignatureMenuSection";
@@ -32,8 +32,8 @@ export default function Home() {
       {/* Cinematic Hero */}
       <HeroSection onOpenBooking={() => handleOpenBooking()} />
 
-      {/* Spotify Playlist Embed & Player Section */}
-      <PlaylistSection />
+      {/* 3D Romantic Cafe View & Spotify Love Melodies Centerpiece */}
+      <RomanticCenterpiece onOpenBooking={() => handleOpenBooking()} />
 
       {/* Interactive 5-Step Date Experience */}
       <DateExperienceSection />

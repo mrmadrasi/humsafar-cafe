@@ -24,11 +24,11 @@ export function Navbar({ onOpenBooking }: NavbarProps) {
 
   const navLinks = [
     { name: "Home", href: "#hero", icon: Sparkles },
-    { name: "Experience", href: "#experience", icon: Heart },
+    { name: "3D Café & Songs", href: "#experience", icon: Heart },
     { name: "Menu", href: "#menu", icon: Utensils },
-    { name: "Playlist", href: "#playlist", icon: Music },
+    { name: "Date Box", href: "#fortwo", icon: Sparkles },
     { name: "Gallery", href: "#gallery", icon: ImageIcon },
-    { name: "Contact", href: "#location", icon: MapPin },
+    { name: "Location", href: "#location", icon: MapPin },
   ];
 
   return (
